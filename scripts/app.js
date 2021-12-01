@@ -9,10 +9,9 @@ async function getPokeData(e) {
     let input = $("#input").val();
     const url = `https://pokeapi.co/api/v2/pokemon/${input}`;
   
-    // let randomGame = myArray[Math.floor(Math.random()*myArray.length)];
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data)
+
     document.getElementById("pokeName").innerText = data.name;
     document.getElementById("pokeType").innerText = data.types[0].type.name;
     document.getElementById("pokedex").innerText = data.id;
