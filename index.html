@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./scripts/app.js" defer></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pokeImage">
+    <img id="pokeBall" src="./pokeball.png" alt="">
+    </div>
+    <div class="container">
+    <h1>Pokemon Database!</h1>
+        <div>
+            <form>
+                <input id="input" name="name" type="text"/>
+                <button id="button" type="click"> Search! </button>
+            </form>
+        <div class="fields">
+        <div>
+            Pokemon Name:<h3 id="pokeName"></h3>
+        </div>
+        <div>
+            Pokemon Type:<h3 id="pokeType"></h3>
+        </div>
+        <div>
+            Pokedex Number: <h3 id="pokedex"></h3>
+        </div>
+        <div>
+            Picture: <img id="sprite" src="" alt="">
+        </div>
+        <div>
+            Random Move: <h3 id="randomGame"></h3>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
