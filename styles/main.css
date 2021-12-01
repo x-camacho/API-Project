@@ -1,3 +1,7 @@
+:root {
+    --pixel-size: 6;
+  }
+
 h1 {
     text-align: center;
     margin: 1rem;
@@ -5,32 +9,49 @@ h1 {
 }
 
 .container {
+    width: 600px;
+    height: 600px;
     position: absolute;
     margin: 0;
     left: 50%;
-    top: 46%;
+    top: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-style: solid;
     border-width: 1rem;
+    padding: 1rem;
 }
 
 body {
     text-align: center;
 }
 
-#pokeBall {
-    width: 250px;
-    height: 250px;
-    margin: 1rem;
-    padding: 1rem;
-}
-
-
-
 #randomGame {
     animation: color-change 1s infinite;
 }
+
+
+.pokeImage_trainer  {
+    animation: moveTrainer 1s steps(4) infinite;
+    width: calc(132px * var(--pixel-size));
+}
+
+.pokeImage {
+    width: calc(32px * var(--pixel-size));
+    height: calc(51px * var(--pixel-size));
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+
+}
+  
+.pixelart {
+    image-rendering: pixelated;
+
+}
+  
+
+/* random move color change */
 
 @keyframes color-change { 
     0% { color: rgb(255, 145, 0); }
@@ -42,3 +63,12 @@ body {
     90% { color: rgb(255, 0, 64); }
     100% { color: rgb(255, 0, 0); }
   }
+
+@keyframes moveTrainer {
+    from {
+        transform:translate3d(0px,0,0)
+    }
+    to {
+        transform: translate3d(-100%,0,0);
+    }
+}
