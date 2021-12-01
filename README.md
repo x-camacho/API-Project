@@ -1,2 +1,2 @@
 # API-Project
-API Project using Pokemon TCG
+API Project using pokeAPI
